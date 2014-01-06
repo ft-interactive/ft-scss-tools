@@ -1,8 +1,8 @@
-@mixin trumps($namespace: '') {
+@mixin trumps($namespace: null) {
 
   $prefix: '';
 
-  @if ($namespace != '') {
+  @if ($namespace) {
     $prefix: $namespace + '-';
   }
 
