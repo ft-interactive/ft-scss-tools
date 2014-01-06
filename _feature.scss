@@ -1,0 +1,11 @@
+@mixin feature($feature) {
+  .#{feature} {
+    @content;
+  }
+}
+
+@mixin no-feature($feature) {
+  .no-#{feature} {
+    @content;
+  }
+}

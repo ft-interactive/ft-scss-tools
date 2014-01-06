@@ -1,0 +1,7 @@
+@import "../normalize";
+
+@include normalize;
+
+.root{
+  @include normalize;
+}

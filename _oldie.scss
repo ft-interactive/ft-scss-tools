@@ -1,0 +1,23 @@
+$compile-oldie: false !default;
+$oldie-class-name: 'oldie';
+
+@mixin oldie($use-class: false){
+  @if (not $use-class) and $compile-oldie {
+    @content;
+  } @else if ($use-class) {
+    .#{$oldie-class-name}{
+      @content;
+    }
+  }
+}
+
+@mixin no-oldie($use-class: false){
+  @if (not $use-class) and (not $compile-oldie) {
+    @content;
+  } @else if $use-class {
+    .no-#{$oldie-class-name}{
+      @content;
+    }
+  }
+}
+

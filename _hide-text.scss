@@ -1,0 +1,11 @@
+// Implementation from http://nicolasgallagher.com/another-css-image-replacement-technique/
+@mixin hide-text {
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}

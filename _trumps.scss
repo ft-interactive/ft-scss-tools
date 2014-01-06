@@ -1,0 +1,56 @@
+@mixin trumps($namespace: '') {
+
+  $prefix: '';
+
+  @if ($namespace != '') {
+    $prefix: $namespace + '-';
+  }
+
+  .#{$prefix}float-right {
+    float: right !important;
+  }
+
+  .#{$prefix}float-left {
+    float: left !important;
+  }
+
+  .#{$prefix}align-right {
+    text-align: right !important;
+  }
+
+  .#{$prefix}align-left {
+    text-align: left !important;
+  }
+
+  .#{$prefix}align-center {
+    text-align: center !important;
+  }
+
+  .#{$prefix}display-none{
+    display: none !important;
+  }
+
+  .#{$prefix}display-block{
+    display: block !important;
+  }
+
+  .#{$prefix}display-inline{
+    display: inline !important;
+  }
+
+  .#{$prefix}position-fixed{
+    position: fixed !important;
+  }
+
+  .#{$prefix}position-static{
+    position: static !important;
+  }
+
+  .#{$prefix}position-relative{
+    position: relative !important;
+  }
+
+  .#{$prefix}position-absolute{
+    position: absolute !important;
+  }
+}

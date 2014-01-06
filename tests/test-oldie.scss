@@ -1,0 +1,31 @@
+@import "../oldie";
+
+$compile-oldie: false;
+
+
+.foo{
+  width: 100%;
+  @include oldie{
+    height: 100%;
+  }
+}
+
+@include oldie(true){
+  .foo-use-class{
+    height: 100%;
+  }
+}
+
+.bar{
+  width: 100%;
+  @include no-oldie{
+    height: 100%;
+  }
+}
+
+@include no-oldie(true){
+  .bar-use-class{
+    height: 100%;
+  }
+}
+

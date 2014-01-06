@@ -1,0 +1,17 @@
+@import "../index";
+
+.test-size-1{
+  @include size(10 10);
+}
+
+.test-size-2{
+  @include size(10px 10px);
+}
+
+.test-size-3{
+  @include size(auto 20);
+}
+
+.test-size-3{
+  @include size(1em 1em);
+}
