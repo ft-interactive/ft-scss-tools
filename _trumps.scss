@@ -53,4 +53,13 @@
   .#{$prefix}position-absolute{
     position: absolute !important;
   }
+
+  .#{$prefix}invisible{
+    visibility: hidden;
+  }
+
+  .#{$prefix}hidden {
+    visibility: hidden;
+    display: none;
+  }
 }
