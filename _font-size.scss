@@ -1,3 +1,5 @@
+$base-font-size: 16px !default;
+
 @mixin font-size($size, $is-important: false) {
   $size: if(unitless($size), $size, $size / 1px);
 
