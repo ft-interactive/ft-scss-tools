@@ -13,3 +13,13 @@
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
+
+@function base($size, $context: $base-font-size) {
+  @if not unitless($size) {
+      $size: strip-units($size);
+  }
+  @if not unitless($context) {
+      $context: strip-units($context);
+  }
+  @return ($size) * $context;
+}

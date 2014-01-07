@@ -1,11 +1,11 @@
 @mixin font-size($size, $is-important: false) {
-  $size: if(unitless($size), $size, $size / 1px);
+  $size: if(unitless($size), $size, strip-units($size / 1px));
 
   @if $is-important {
-    font-size: $size + px !important;
-    font-size: ($size / strip-units($base-font-size)) + rem !important;
+    font-size: base($size) + px !important;
+    font-size: $size + rem !important;
   } @else {
-    font-size: $size + px;
-    font-size: ($size / strip-units($base-font-size)) + rem;
+    font-size: base($size) + px;
+    font-size: $size + rem;
   }
 }
