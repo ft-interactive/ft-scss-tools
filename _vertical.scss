@@ -1,0 +1,9 @@
+@mixin vertical($size, $is-important: false) {  
+  @if $is-important {
+    margin-top: 0 !important;
+    margin-bottom: if(unitless($size), ($size * strip-units($base-font-size)) + px, $size) !important;
+  } @else {
+    margin-top: 0;
+    margin-bottom: if(unitless($size), ($size * strip-units($base-font-size)) + px, $size);
+  }
+}
