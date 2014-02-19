@@ -1,7 +1,7 @@
 @mixin normalize($global-boxmodel: false) {
 
   @if $global-boxmodel != false {
-    * { 
+    *, *:before, *:after { 
         -webkit-box-sizing: $global-boxmodel; 
         -moz-box-sizing: $global-boxmodel;
         box-sizing: $global-boxmodel;
