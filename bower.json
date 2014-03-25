@@ -1,0 +1,10 @@
+{
+  "name": "ft-scss-tools",
+  "version": "0.1.0",
+  "main": "./index.scss",
+  "private": true,
+  "ignore": [
+    "config.rb",
+    "tests"
+  ]
+}
